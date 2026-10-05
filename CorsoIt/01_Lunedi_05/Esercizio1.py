@@ -11,5 +11,5 @@ numint1 = int(input("inserisci un int"))
 numint2 = int(input("inserisci un int"))
 
 print(numint1 < numint2 and numint1 > numint2 )
-print(numint1 < numint2 or  numint1 > numint2 )
-print(not(numint1 < numint2 and numint1 > numint2 ))
+print(numint1 < numint2 or  numint1 > numint2 or numint1 == numint2)
+print(not( numint1 < numint2 and numint1 > numint2 ))
