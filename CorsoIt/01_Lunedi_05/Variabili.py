@@ -1,3 +1,7 @@
 # Qui peroveremo le variabili e i tipi di variabile 
 
-nomeVariabile = "valore"
+nome_variabile = "valore"
+numero = 1
+
+bool_t = True
+bool_f = False
