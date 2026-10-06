@@ -1,13 +1,13 @@
 #-------------------------------------------------- Es 2
 
-x = int(input("Inserisci un numero"))
+x = int(input("Inserisci un numero maggiore di 10"))
 
 if x > 10:
     
-    x = int(input("Inserisci un numero"))
+    x = int(input("Inserisci un maggiore di 50"))
     if x > 50: 
          
-        x = int(input("Inserisci un numero"))
+        x = int(input("Inserisci un numero maggiore di 100"))
         if x > 100:  
             
             print("hai vinto")
@@ -15,9 +15,9 @@ if x > 10:
   
 #-------------------------------------------------- Es 2
             
+# dati
 lista = [1,2,3]
-
-scelta = input("cosa vuoi fare?")
+scelta = input("cosa vuoi fare? aggiungi, rimuovi, modifica ")
 
 if scelta == "aggiungi" :
     scelta2 = input("scegli una parola")
@@ -26,7 +26,7 @@ if scelta == "aggiungi" :
     print(lista)
 elif scelta == "rimuovi":
     print("scegli cosa rimuovere fra: ", lista)
-    scelta2 = input("scegli una parola")
+    scelta2 = int(input("scegli il numero "))
     lista.remove(scelta2)
     
     print(lista)  
@@ -38,4 +38,5 @@ elif scelta == "modifica":
     
     print(lista)   
 else: 
+    
     print("Scelta sbagliata")
