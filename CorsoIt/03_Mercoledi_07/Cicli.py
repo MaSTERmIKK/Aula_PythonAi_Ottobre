@@ -21,9 +21,9 @@ while True:
     
 
 
-scelta = float(input("inserisci il limite"))
-scelta2 = float(input("inserisci il limite"))
-scelta3 = float(input("inserisci il limite"))
+scelta = int(input("inserisci il limite"))
+scelta2 = int(input("inserisci il limite"))
+scelta3 = int(input("inserisci il limite"))
 
 lista = [*range(scelta,scelta2,scelta3)]
         
