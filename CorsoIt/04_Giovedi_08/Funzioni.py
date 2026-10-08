@@ -29,3 +29,5 @@ lista[0] = moltiplicazione(100,5) # è uguale a a*b
 
 # usiamo i return per riempire a e b di somma
 somma(moltiplicazione(100,5), moltiplicazione(100,5))
+
+
