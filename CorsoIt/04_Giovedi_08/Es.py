@@ -57,4 +57,3 @@ while scelta != "fine":
         print("Sei un pippo")
     
     
-    

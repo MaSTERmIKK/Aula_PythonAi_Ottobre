@@ -31,3 +31,6 @@ lista[0] = moltiplicazione(100,5) # è uguale a a*b
 somma(moltiplicazione(100,5), moltiplicazione(100,5))
 
 
+
+
+
