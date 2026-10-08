@@ -33,13 +33,14 @@ while scelta != "fine":
 
         massimo = int(input("Inserisci il numero massimo: "))
         step = int(input("Inserisci lo step: "))
+        start = int(input("Inserisci lo start: "))
 
-        for numero in range(0, massimo + 1, step):
-            print(numero)
+        for x in range(start, massimo + 1, step):
+            print(x)
 
 
     if scelta != "es1" and scelta != "es2" and scelta != "es3" and scelta != "fine":
-        print("Scelta non valida")
+        print("Sei un pippo")
 
 
 print("Programma terminato")
