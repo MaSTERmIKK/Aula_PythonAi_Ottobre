@@ -12,7 +12,6 @@ class Persona:
     def saluta(self):
         return("ciao mirko")
 
-
 # Inizializzazione del'oggetto tramite costruttore 
 Ogg_1 = Persona("Luca",31)
 Ogg_2 = Persona("Martina",17)
@@ -23,3 +22,11 @@ print(Ogg_1.nome)
 print(Ogg_2.nome)
 
 print(Ogg_1.saluta())
+
+
+class Esempio:
+    
+    def __init__(self):
+        pass
+
+Es = Esempio()
