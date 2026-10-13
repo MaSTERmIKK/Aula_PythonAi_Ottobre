@@ -26,7 +26,6 @@ class Parametri_privati():
             print("sei un pippo")
         else:
             self.__nome = nome_nuovo
-            self.__metodo_privato()
             
     # metodo privato
     def __metodo_privato(self):
