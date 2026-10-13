@@ -3,12 +3,15 @@ class Studente:
     def __init__(self, nome, voto):
         self.nome = nome
         self.voto = voto
+        
+    def __str__(self):
+            return "non puoi"
 
     def __repr__(self):
         return f"Studente(nome={self.nome}, voto={self.voto})"
 
 s = Studente("Mario", 28)
-print(s)   # Studente(nome=Mario, voto=28)
+print(s)   # "non puoi"
 repr(s)    # "Studente(nome=Mario, voto=28)"
 
 
