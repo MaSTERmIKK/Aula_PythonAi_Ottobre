@@ -56,6 +56,27 @@ for i in lista_libri:
     print(i.stampa_libro())
     
 
+#----------------------------------------Es3
 
+class ContoBncario:
+    
+    def __init__(self, intestatario, saldo):
+        self.intestatario = intestatario
+        self.saldo = saldo
+        
+    def deposita(self):
+        pass
+
+    def ritira(self):
+        pass
+    
+    def viss(self):
+        pass
+ 
+ 
+ 
+scelta_menu = ""
+while scelta_menu != "end" :
+   pass
 
 
