@@ -9,10 +9,8 @@ class x:
             pass
         
 class Parametri_privati():
-    
     # variabile privata
     __nome = "mirko"
-    
     # variabile protetta
     _protetto = ""
     
@@ -26,7 +24,6 @@ class Parametri_privati():
             print("sei un pippo")
         else:
             self.__nome = nome_nuovo
-            
     # metodo privato
     def __metodo_privato(self):
         print("sono dentro")
