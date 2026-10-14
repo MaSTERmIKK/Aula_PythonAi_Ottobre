@@ -16,8 +16,12 @@ class Pappo():
 pippo = Pippo()
 pappo = Pappo()
 
-def fai_cose(oggetto_a_caso):
+def fai_cose(oggetto_a_caso:object):
     
     oggetto_a_caso.fai_cosa_a_caso()
     
 fai_cose(pappo)
+
+
+
+
