@@ -19,11 +19,13 @@ class Parametri_privati():
     # getter e setter
     def get_nome(self):
         return self.__nome
+    
     def set_nome(self, nome_nuovo):
         if len(nome_nuovo) < 0 :
             print("sei un pippo")
         else:
             self.__nome = nome_nuovo
+            
     # metodo privato
     def __metodo_privato(self):
         print("sono dentro")
