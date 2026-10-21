@@ -1,0 +1,11 @@
+nome,eta,voto,Sesso,promosso
+Mario,20,8,F,True
+Luca,22,7,M,True
+Anna,19,9,F,True
+Giulia,21,10,F,True
+Marco,23,6,M,True
+Sara,20,8,F,True
+Paolo,19,5,F,False
+Elena,22,9,M,True
+Francesco,21,7,F,True
+Laura,20,10,M,True
