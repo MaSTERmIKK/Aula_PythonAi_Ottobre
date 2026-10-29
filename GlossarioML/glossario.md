@@ -7,8 +7,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 ## Giorno 1 — Fondamenti di Machine Learning e primo modello
 
 ### 1.1 Cos'è il Machine Learning
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Intelligenza Artificiale (AI) | Insieme delle tecniche che permettono a una macchina di svolgere compiti che normalmente richiedono intelligenza umana. |
 | Machine Learning (ML) | Parte dell'AI in cui il computer impara dai dati invece di seguire regole scritte a mano. |
 | Deep Learning (DL) | Parte del ML basata su reti neurali con molti strati. |
@@ -21,8 +22,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | Pattern | Regolarità presente nei dati che il modello cerca di cogliere. |
 
 ### 1.2 Dati e tipi di apprendimento
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Dataset | Insieme di dati organizzato come tabella. |
 | Campione (osservazione, istanza) | Una riga del dataset: un singolo caso. |
 | Feature (caratteristica, variabile indipendente) | Una colonna che descrive il campione e viene usata come input. |
@@ -41,8 +43,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | Agente / ambiente / ricompensa | Nel rinforzo: chi decide / il mondo in cui agisce / il segnale positivo o negativo che riceve. |
 
 ### 1.3 Librerie, setup e mappa di scikit-learn
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | scikit-learn | Libreria Python per il ML classico su dati tabellari, con API uniforme. Si installa come `scikit-learn`, si importa come `sklearn`. |
 | TensorFlow / Keras | Libreria di Google per il deep learning; Keras è la sua interfaccia di alto livello. |
 | PyTorch | Libreria di deep learning molto usata nella ricerca, con grafo computazionale dinamico. |
@@ -53,8 +56,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | Modulo di scikit-learn | Sotto-pacchetto che raggruppa strumenti dello stesso tipo (es. `sklearn.metrics`). |
 
 ### 1.4 Dataset in scikit-learn
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | `load_*` | Funzioni che caricano piccoli dataset inclusi nella libreria. |
 | `fetch_*` | Funzioni che scaricano dataset più grandi da internet al primo utilizzo. |
 | `make_*` | Funzioni che generano dataset sintetici con caratteristiche controllate. |
@@ -65,8 +69,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | Seme casuale (`random_state`) | Numero iniziale del generatore pseudo-casuale: stesso seme → stessi risultati (riproducibilità). |
 
 ### 1.5 API di scikit-learn e workflow
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Estimator | Classe di scikit-learn che implementa un algoritmo; il modello ne è un'istanza. |
 | `fit(X, y)` | Metodo che addestra il modello sui dati. |
 | `predict(X)` | Metodo che restituisce le predizioni per nuovi dati. |
@@ -83,8 +88,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | Workflow ML | Sequenza: dati → preprocessing → divisione → scelta modello → fit → predict → valutazione → ottimizzazione. |
 
 ### 1.6 K-Nearest Neighbors
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | K-Nearest Neighbors (KNN) | Algoritmo che assegna a un punto la classe più frequente tra i suoi k vicini più prossimi. |
 | `n_neighbors` (k) | Numero di vicini considerati (default 5). |
 | Distanza euclidea | Distanza in linea retta tra due punti: radice della somma delle differenze al quadrato. |
@@ -97,8 +103,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | Regione / confine di decisione | Area del piano assegnata a una classe / linea che separa le regioni. |
 
 ### 1.7 Generalizzazione
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Generalizzazione | Capacità del modello di funzionare bene su dati nuovi. |
 | Errore di training / di test | Errore misurato sui dati di addestramento / su dati mai visti. |
 | Overfitting | Il modello memorizza i dati di training (anche il rumore): training alto, test basso. |
@@ -115,8 +122,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 ## Giorno 2 — Preprocessing e valutazione dei classificatori
 
 ### 2.1 Scaling delle feature
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Scaling | Trasformazione che porta le feature su scale confrontabili. |
 | Media | Somma dei valori diviso il loro numero. |
 | Deviazione standard | Quanto, in media, i valori si allontanano dalla media. |
@@ -130,8 +138,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | `inverse_transform` | Riporta i dati trasformati alla scala originale. |
 
 ### 2.2 Data leakage
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Data leakage | Il modello riceve in addestramento informazioni che non dovrebbe avere, producendo stime troppo ottimistiche. |
 | Regola d'oro del preprocessing | Prima lo split; `fit` di ogni transformer solo sul training; `transform` su training e test. |
 | Target leakage | Una feature contiene, anche indirettamente, la risposta da prevedere. |
@@ -139,8 +148,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | Selezione delle feature (`SelectKBest`) | Scelta delle k colonne più legate al target; anch'essa va fatta solo sul training. |
 
 ### 2.3 Variabili categoriche e dati mancanti
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Variabile nominale | Categoria senza ordine (città, colore). |
 | Variabile ordinale | Categoria con un ordine naturale (taglia S/M/L). |
 | `LabelEncoder` | Converte le etichette del target in interi 0…n−1. |
@@ -157,8 +167,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | `ColumnTransformer` | Applica transformer diversi a gruppi di colonne diversi e unisce i risultati. |
 
 ### 2.4 Alberi di decisione
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Albero di decisione | Modello che prevede tramite una sequenza di domande sì/no sulle feature. |
 | Nodo radice / interno / foglia | Prima domanda / domande intermedie / nodo finale con la predizione. |
 | Split | Divisione di un nodo in due in base a una feature e una soglia. |
@@ -172,8 +183,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | `DecisionTreeRegressor` | Albero per la regressione: ogni foglia prevede la media dei suoi campioni. |
 
 ### 2.5 Metriche di classificazione
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Classe positiva | La classe che vogliamo individuare (malato, frode, spam). |
 | TP / TN | Veri positivi / veri negativi: previsioni corrette. |
 | FP (falso allarme) / FN (caso mancato) | Negativo previsto come positivo / positivo previsto come negativo. |
@@ -196,8 +208,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 ## Giorno 3 — Modelli supervisionati: regressione, modelli lineari e SVM
 
 ### 3.1 Regressione lineare
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Regressione lineare | Modello che prevede un numero come combinazione lineare delle feature: `ŷ = w₁x₁ + … + wₙxₙ + b`. |
 | ŷ (y cappello) | Valore previsto dal modello. |
 | Coefficiente (`coef_`) | Variazione di ŷ quando la feature aumenta di 1, a parità delle altre. |
@@ -210,8 +223,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | `degree` | Grado massimo del polinomio; troppo alto causa overfitting. |
 
 ### 3.2 Metriche di regressione
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | MAE | Errore assoluto medio: media di \|y − ŷ\|, nella stessa unità del target. |
 | MSE | Errore quadratico medio: media di (y − ŷ)²; penalizza molto gli errori grandi. |
 | RMSE | Radice dell'MSE: nella stessa unità del target. |
@@ -221,8 +235,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | Analisi dei residui | Studio grafico degli errori per scoprire dove il modello sbaglia sistematicamente. |
 
 ### 3.3 Regolarizzazione
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Regolarizzazione | Penalità sulla grandezza dei coefficienti aggiunta all'addestramento per ridurre l'overfitting. |
 | `alpha` | Forza della regolarizzazione nei regressori lineari: più è grande, più i coefficienti sono schiacciati. |
 | Ridge (L2) | Regolarizzazione che penalizza la somma dei quadrati dei coefficienti; li riduce tutti. |
@@ -232,8 +247,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | C (nei classificatori) | Inverso della forza di regolarizzazione: C piccolo = regolarizzazione forte. |
 
 ### 3.4 Regressione logistica
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Regressione logistica | Classificatore lineare che stima la probabilità di appartenenza a una classe. |
 | Funzione sigmoide (logistica) | `σ(z) = 1 / (1 + e⁻ᶻ)`: trasforma qualsiasi numero in un valore tra 0 e 1. |
 | Soglia di decisione | Probabilità oltre la quale si assegna la classe positiva (default 0.5). |
@@ -246,8 +262,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | `l1_ratio` | Dalla versione 1.8, sceglie il tipo di penalità della regressione logistica (0 = L2, 1 = L1). |
 
 ### 3.5 Support Vector Machine
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Support Vector Machine (SVM) | Modello che separa le classi con l'iperpiano di margine massimo. |
 | Margine | Fascia libera tra l'iperpiano e i punti più vicini delle due classi. |
 | Vettori di supporto | Punti sul bordo o dentro il margine: gli unici che determinano il confine. |
@@ -264,8 +281,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 ## Giorno 4 — Ensemble, validazione incrociata, ottimizzazione e Pipeline
 
 ### 4.1 Metodi ensemble
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Ensemble | Modello che combina le previsioni di molti modelli. |
 | Bootstrap | Estrazione casuale con reinserimento di un nuovo dataset della stessa dimensione dell'originale. |
 | Bagging | Addestramento in parallelo di più modelli su dataset bootstrap e aggregazione delle previsioni; riduce la varianza. |
@@ -284,8 +302,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | Permutation importance | Importanza misurata come peggioramento del modello quando si mescola una feature. |
 
 ### 4.2 Parametri, iperparametri e bias-varianza
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | `get_params` / `set_params` | Lettura / modifica degli iperparametri di un modello. |
 | Compromesso bias-varianza | Aumentando la complessità il bias scende e la varianza sale; l'errore totale è minimo nel mezzo. |
 | Rumore irriducibile | Parte casuale dei dati che nessun modello può eliminare. |
@@ -293,8 +312,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | Curva di apprendimento (learning curve) | Punteggi di training e validation al variare del numero di campioni di training. |
 
 ### 4.3 Cross-validation
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Cross-validation (validazione incrociata) | Valutazione ripetuta su più divisioni dei dati per una stima più affidabile. |
 | Fold | Ciascuna delle k parti in cui si dividono i dati nella cross-validation. |
 | K-Fold | Ogni fold fa da validation una volta, gli altri k−1 da training; si ottengono k punteggi. |
@@ -307,8 +327,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | Metriche negative (`neg_…`) | Errori espressi con il segno meno per rispettare la convenzione "più alto è meglio". |
 
 ### 4.4 Ricerca degli iperparametri
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Ricerca degli iperparametri (tuning) | Processo automatico di scelta degli iperparametri migliori. |
 | `GridSearchCV` | Prova tutte le combinazioni di una griglia, valutandole con la cross-validation. |
 | `param_grid` | Dizionario (o lista di dizionari) con i valori da provare per ogni iperparametro. |
@@ -321,8 +342,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | `n_jobs` | Numero di processori usati in parallelo (−1 = tutti). |
 
 ### 4.5 Pipeline
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Pipeline | Oggetto che concatena transformer e modello finale e si usa come un unico modello. |
 | `make_pipeline` | Crea una Pipeline assegnando i nomi dei passaggi in automatico. |
 | Passaggio (step) | Ogni coppia (nome, oggetto) della Pipeline. |
@@ -335,8 +357,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 ## Giorno 5 — Apprendimento non supervisionato
 
 ### 5.1 Riduzione della dimensionalità e PCA
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Dimensionalità | Numero di feature di un dataset. |
 | Maledizione della dimensionalità | Con molte feature i dati diventano radi e le distanze perdono significato. |
 | Selezione delle feature | Tenere alcune feature originali e scartare le altre. |
@@ -351,8 +374,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | `IncrementalPCA` | PCA che elabora i dati a blocchi, per dataset che non entrano in memoria. |
 
 ### 5.2 Kernel PCA, t-SNE, Truncated SVD
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Prodotto scalare | Somma dei prodotti delle feature corrispondenti di due campioni (`x·y`). |
 | `KernelPCA` | PCA applicata nello spazio di un kernel; coglie strutture non lineari. |
 | t-SNE | Tecnica non lineare per visualizzare dati in 2D/3D preservando le vicinanze locali; non ha `transform`. |
@@ -363,8 +387,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | LSA (Latent Semantic Analysis) | Uso della TruncatedSVD sui testi per far emergere argomenti latenti. |
 
 ### 5.3 Clustering
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Cluster | Gruppo di campioni simili tra loro e diversi da quelli degli altri gruppi. |
 | K-Means | Algoritmo che assegna ogni punto al centroide più vicino e sposta i centroidi nella media del loro gruppo, fino a convergenza. |
 | Centroide (`cluster_centers_`) | Punto medio di un cluster. |
@@ -387,8 +412,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 ## Giorno 6 — Reti neurali e TensorFlow/Keras: fondamenti
 
 ### 6.1 Dal neurone alla rete neurale
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Rete neurale | Modello composto da molti neuroni artificiali organizzati in strati. |
 | Neurone artificiale | Unità che calcola una somma pesata degli input più un bias e applica una funzione di attivazione. |
 | Peso | Coefficiente che indica quanto conta un input per un neurone; viene imparato. |
@@ -405,8 +431,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | Dati non strutturati | Dati non organizzati in tabella: immagini, audio, testo. |
 
 ### 6.2 Come impara una rete neurale
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Funzione di perdita (loss) | Numero che misura l'errore della rete; l'addestramento cerca di minimizzarlo. |
 | Binary crossentropy | Loss per la classificazione binaria (log loss). |
 | Categorical crossentropy | Loss multiclasse: −log della probabilità assegnata alla classe corretta. |
@@ -424,8 +451,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | Adam | Ottimizzatore con momentum e learning rate adattivo per ogni peso; scelta di default. |
 
 ### 6.3 TensorFlow
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | TensorFlow | Libreria open-source di Google per il calcolo numerico e il deep learning su CPU, GPU e TPU. |
 | Tensore | Array multidimensionale di numeri, struttura dati di base di TensorFlow. |
 | Rango (`ndim`) | Numero di dimensioni di un tensore: 0 scalare, 1 vettore, 2 matrice, … |
@@ -440,8 +468,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | GPU | Processore grafico, molto più veloce della CPU per i calcoli delle reti neurali. |
 
 ### 6.4 Keras
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Keras | API di alto livello per costruire e addestrare reti neurali; Keras 3 supporta i backend TensorFlow, JAX e PyTorch. |
 | Backend | Libreria che esegue effettivamente i calcoli sotto Keras. |
 | Modello Sequenziale (`keras.Sequential`) | Modello con strati in sequenza lineare, un input e un output. |
@@ -456,8 +485,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | `set_random_seed` | Fissa i semi casuali per risultati riproducibili. |
 
 ### 6.5 Reti dense per dati tabellari e immagini
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Uscita lineare | Ultimo strato senza attivazione, usato per la regressione. |
 | `sparse_categorical_crossentropy` | Loss multiclasse con etichette intere (0, 1, 2…). |
 | `to_categorical` | Funzione Keras che converte le etichette intere in one-hot. |
@@ -473,16 +503,18 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 ## Giorno 7 — Valutazione, regolarizzazione, reti convoluzionali
 
 ### 7.1 Valutare e diagnosticare una rete
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Curve di addestramento | Grafici di loss e metriche per epoca su training e validazione (`history.history`). |
 | `val_loss` / `val_accuracy` | Loss e accuratezza calcolate sui dati di validazione a ogni epoca. |
 | Confidenza | Probabilità assegnata dal modello alla classe scelta (`np.max` delle probabilità). |
 | Analisi degli errori | Esame dei campioni classificati male, soprattutto quelli con alta confidenza. |
 
 ### 7.2 Overfitting e regolarizzazione
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Dropout | Strato che durante l'addestramento spegne a caso una frazione di neuroni; inattivo in predizione. |
 | `kernel_regularizer` | Parametro di uno strato per aggiungere una penalità L1/L2 sui pesi. |
 | Early stopping | Interruzione dell'addestramento quando la metrica di validazione smette di migliorare. |
@@ -493,8 +525,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | BatchNormalization | Strato che normalizza le uscite di uno strato, stabilizzando e velocizzando l'addestramento. |
 
 ### 7.3 Reti neurali convoluzionali (CNN)
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | CNN (rete convoluzionale) | Rete neurale che usa convoluzioni per sfruttare la struttura spaziale delle immagini. |
 | Convoluzione | Operazione in cui un filtro scorre sull'immagine calcolando somme pesate dei pixel sottostanti. |
 | Filtro (kernel) | Piccola griglia di pesi imparati (es. 3×3) che rileva un motivo nell'immagine. |
@@ -507,8 +540,9 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | `GlobalAveragePooling2D` | Strato che riduce ogni feature map alla sua media; alternativa leggera a `Flatten`. |
 
 ### 7.4 Data augmentation, salvataggio e transfer learning
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Data augmentation | Creazione di varianti realistiche delle immagini di training per ridurre l'overfitting. |
 | `RandomFlip` / `RandomRotation` / `RandomZoom` / `RandomContrast` | Strati Keras di augmentation, attivi solo in addestramento. |
 | `Rescaling` | Strato che normalizza i pixel dentro il modello. |
@@ -521,7 +555,8 @@ Concetti ordinati per giornata e modulo in cui vengono spiegati. Le definizioni 
 | `image_dataset_from_directory` | Funzione che crea un dataset di immagini da cartelle, una per classe. |
 
 ### 7.5 scikit-learn o Keras?
+
 | Termine | Definizione |
-|---|---|
+| --- | --- |
 | Baseline | Modello semplice di riferimento da cui partire e da battere. |
 | Cross-validation con Keras | Ciclo manuale con `StratifiedKFold` che crea un modello nuovo e ripete il preprocessing a ogni fold. |
