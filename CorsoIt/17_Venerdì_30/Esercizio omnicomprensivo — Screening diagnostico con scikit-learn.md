@@ -56,9 +56,6 @@ Il team clinico pone due vincoli:
 1. Dividi in **training 60% / validation 20% / test 20%** con due chiamate a `train_test_split`.
 2. Usa `random_state=42` e `stratify=y` in entrambe.
 3. Stampa le dimensioni dei tre insiemi e la percentuale di maligni in ciascuno.
-4. Scrivi in un commento a cosa servirà ciascun insieme, e perché il **test set non va toccato** fino al punto 9.
-
-> Da qui in avanti, nessun transformer o modello può fare `fit` su validation o test.
 
 ### 4. Baseline *(2.5)*
 
