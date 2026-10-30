@@ -29,7 +29,6 @@ Il team clinico pone due vincoli:
 | 1.6 | KNN, distanza, scelta di k, `kneighbors`, `predict_proba` | Punti 5, 7 |
 | 1.7 | Train/validation/test, overfitting, underfitting, curva di complessità | Punti 3, 7, 8 |
 | 2.1 | `StandardScaler`, `MinMaxScaler`, modelli che richiedono scaling | Punto 6 |
-| 2.2 | Data leakage, regola d'oro (split → fit sul train → transform) | Punti 6, 10 |
 | 2.4 | Alberi di decisione, Gini, `max_depth`, `export_text` | Punto 8 |
 | 2.5 | Matrice di confusione, precision, recall, F1, `stratify`, `DummyClassifier` | Punti 3, 4, 9, 10 |
 
